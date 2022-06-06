@@ -4,9 +4,7 @@ import { routes } from './routes';
 
 const app = express();
 
-app.use(cors({
-    origin: 'https://feedget-web-tawny-two.vercel.app',
-}));
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
